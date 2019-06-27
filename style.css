@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    background-color: #424249;
+    color: #FFFDFC;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.left-nav h1{
+    font-family: 'Righteous';
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+header p {
+    font-family: 'Roboto';
+    font-size: 35px;
+    margin-right: 40px;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40vh;
+    border: 1px solid red;
+    padding-top: 50px;
+}
+
+.expenses {
+    width: 30%;
+    height: 20vh;
+    border: 1px solid red;
+    padding: 20px;
+    background-color: #EFE8E1;
+    border-radius: 5px;
+}
+
+.expenses h1 {
+    margin-top: 0;
+    font-family: 'Righteous';
+    color: #424249;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.row {
+    font-family: 'Roboto';
+    font-weight: 10;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.row-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+}
+
+#input-form {
+    width: 30%;
+    height: 30vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #54D2E5;
+    border-radius: 5px;
+}
+
+#input-form h1 {
+    margin: 0;
+    font-family: 'Righteous';
+    color: #424249;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.inputs {
+    font-family: 'Roboto';
+    color: #424249;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs span {
+    font-size: 30px;
+    font-weight: 10;
+    width: 25%;
+}
+
+.inputs input {
+    width: 70%;
+    border: 1px solid #424249;
+    border-radius: 5px;
+}
+
+#btn-add {
+    font-family: 'Righteous';
+    font-size: 30px;
+    background-color: #424249;
+    border: 1px solid #424249;
+    border-radius: 5px;
+    height: 50px;
+    color: #FFFDFC;
+}
+
+
+
+
+
+
