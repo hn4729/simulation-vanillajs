@@ -31,7 +31,7 @@ function addItem(event) {
 
     total += Number(amount.value);
 
-    budget.innerText = `Budget Total: $${total}`
+    budget.innerText = `Budget Total: $${total}`;
 
     rowItems.append(itemName, cost);
     row.append(rowItems, trashcan);
@@ -39,16 +39,20 @@ function addItem(event) {
 
     item.value = "";
     amount.value = "";
+
 }
 
 function removeItem(event) {
     const nodes = event.target.parentNode.childNodes;
-    const removeAmount = nodes[0].childNodes;
-    console.log(nodes);
-    console.log(removeAmount);
+    const amountNode = nodes[0].childNodes[1].innerText;
 
-    // total -= Number()
-    // event.target.parentNode.remove();
+    const removeAmount = String(amountNode).split("").slice(1).join("");
+
+    total -= Number(removeAmount);
+
+    budget.innerText = `Budget Total: $${total}`;
+
+    event.target.parentNode.remove();
 }
 
 form.addEventListener("submit", addItem);
